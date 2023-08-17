@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+
+<input>
+<button>Ler</button>
+
+<script>
+    function mostra() {
+        alert(input.value);
+        input.value = "";
+        input.focus();
+    }
+
+    var input = document.querySelector("input");
+    var button = document.querySelector("button");
+    input.focus();
+    button.onclick = mostra;
+
+</script>
